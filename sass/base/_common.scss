@@ -1,0 +1,48 @@
+a {
+    text-decoration-line: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  p {
+    padding: 0;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  .container {
+    width: 1200px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .section-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
