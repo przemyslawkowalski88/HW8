@@ -1,0 +1,67 @@
+/*--HERO--*/
+
+
+
+.nav__adv {
+    padding-top: 94px;
+    margin: 0;
+
+
+&-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+&-item {
+    top: 774px;
+
+         &:not(:last-child) {
+        margin-right: 30px;
+        top: 93px;
+        }
+    }
+
+&-iconbox {
+    width: 270px;
+    height: 120px;
+    background-color: var(--creamy-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &:hover,
+        &:focus {
+        fill: var(--main-color);
+    }
+}
+
+    &-icon {
+        width: 70px;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+
+&-h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--family-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+&-p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--gray);
+}
+}
+
+
+/*--END-HERO--*/

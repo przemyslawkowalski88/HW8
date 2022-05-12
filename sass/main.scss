@@ -2,11 +2,19 @@
 
 @import "./components/compoents";
 
+
+@import "./layout/header";
+@import "./layout/button";
 @import "./layout/modal-windowe";
-@import "./layout/webstudio";
+@import "./layout/hero";
+@import "./layout/our.team";
+@import "./layout/what.we.do";
+@import "./layout/costumers";
 @import "./layout/portfolio";
+@import "./layout/portfolio-buttons";
+@import "./layout/footer";
+
 
 @import "./utlis/variables";
-@import "./utlis/variables";
-@import "./utlis/visually-hidden";
+@import "./utlis/viusally-hidden";
 

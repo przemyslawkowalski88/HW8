@@ -1,21 +1,21 @@
-.contact-mail:hover,
-.contact-mail:focus,
-.contact-phone-number:hover,
-.contact-phone-number:focus,
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.footer-phone-number:hover,
-.footer-phone-number:focus,
-.footer-mailto:hover,
-.footer-mailto:focus,
-.footer-address:hover,
-.footer-address:focus,
-.navigation-list-link:focus,
-.navigation-list-link:hover {
+.contac__mail:hover,
+.contac__mail:focus,
+.contac__phone-number:hover,
+.contac__phone-number:focus,
+.navigatio__list-link:hover,
+.navigatio__list-link:focus,
+.foote__phone-number:hover,
+.foote__phone-number:focus,
+.foote__mailto:hover,
+.foote__mailto:focus,
+.foote__address:hover,
+.foote__address:focus,
+.navigatio__list-link:focus,
+.navigatio__list-link:hover {
   color: var(--main-color);
 }
 
-.secondary-header {
+.secondary__header {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
@@ -24,7 +24,7 @@
   color: var(--family-color);
 }
 
-.third-header {
+.third__header {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
