@@ -1,11 +1,22 @@
 /*--FOOTER--*/
 .footer {
     background: var(--graphite-color);
-}
 
-.footer .container {
+    & .container {
     display: flex;
     align-items: center;
+}
+&__mailto,
+&__phone-number,
+&__address-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
 }
 
 .footer__left {
@@ -30,36 +41,26 @@
     color: var(--white-color);
     margin-top: 20px;
     margin-bottom: 9px;
-}
-
-.footer__address-list-item:not(:last-child) {
+        &-item:not(:last-child) {
     margin-bottom: 9px;
-}
+        }
+    }
 
 
 
-.footer__mailto,
-.footer__phone-number,
-.footer__address-link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
 
 
 
 /*--FOOTER-RIGHT--*/
-.footer__links-title {
+.footer__links{
+
+&-title {
     font-weight: bold;
     font-size: 14px;
     color: var(--white-color);
 }
 
-.footer__links-item-svg {
+ &-item-svg {
     display: block;
     width: 44px;
     height: 44px;
@@ -75,10 +76,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__links--item-svg:hover,
-.footer__links-item--svg:focus {
-    fill: var(--white-color);
-    background-color: var(--main-color);
+    &-item-svg:hover,
+    &-item-svg:focus {
+        fill: var(--white-color);
+        background-color: var(--main-color);
+}
 }
 
 .footer__links {
@@ -88,19 +90,19 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 0px;
-}
 
-.footer__links-icon {
+&-icon {
     width: 20px;
     height: 20px;
+}
 }
 
 /*-- NEWSLETTER--*/
 .footer__newsletter {
     margin-left: 78px;
-}
 
-.footer__newsletter-h4 {
+
+&-h4 {
     margin-top: -10px;
     position: absolute;
     width: 207px;
@@ -115,13 +117,13 @@
     fill: var(--white-color);
 }
 
-.footer__newsletter-Label {
+&-Label {
     display: flex;
     margin-bottom: 8px;
     margin-top: 20px;
 }
 
-.footer__newsletter-Window {
+&-Window {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     width: 358px;
@@ -137,7 +139,7 @@
     border-color: var(--main-color);
 }
 
-.footer__newsletter-modal-bnt {
+&-modal-bnt {
     height: 50px;
     width: 200px;
     display: flex;
@@ -158,10 +160,11 @@
     border-radius: 4px;
 }
 
-.footer__newsletter-Icon {
+&-Icon {
     margin-left: 24px;
     width: 24px;
     height: 24px;
+}
 }
 
 

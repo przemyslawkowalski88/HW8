@@ -1,19 +1,19 @@
 /*--WHAT-WE-DO--*/
 
-.what .secondary__header {
-    margin-bottom: 50px;
-}
-
 .what__section {
     padding-bottom: 94px;
 }
 
-.what__list {
+.what .secondary__header {
+    margin-bottom: 50px;
+}
+
+.what{
+&__list {
     display: flex;
     justify-content: space-between;
 }
-
-.what__item {
+&__item {
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -22,16 +22,14 @@
     width: 370px;
     height: 294px;
 }
-
-.what__box {
+&__box {
     position: absolute;
     width: 100%;
     height: 70px;
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
 }
-
-.what__description {
+&__description {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,6 +42,7 @@
     text-transform: uppercase;
     color: var(--white-color);
     text-align: center;
+}
 }
 
 /*--END-WHAT-WE-DO--*/

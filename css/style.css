@@ -412,14 +412,14 @@ img {
   background: var(--creamy-color);
 }
 
-.staff__list {
+.staff-list {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
  
 }
 
-.staff__item {
+.staff-item {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -428,17 +428,18 @@ img {
   background: var(--white-color);
 }
 
-.staff .secendary__header {
+.staff .secendary-header {
   margin-bottom: 50px;
   margin-top: 0;
+  text-align: center;
 }
-.third__header {
+.third-header {
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.staff__p {
+.staff-p {
   margin: 0;
   font-weight: normal;
   font-size: 16px;
@@ -448,14 +449,14 @@ img {
   color: var(--gray-color);
 }
 
-.staff__list{
+.staff-list{
   margin-right: 32px;
   margin-left: 32px;
 }
 
 
 
-.social__links-itemsvg {
+.social-links-itemsvg {
   fill: var(--fill-color);
   display: flex;
   width: 44px;
@@ -470,17 +471,16 @@ img {
  }
 
 
-.social__links-itemsvg:hover,
-.social__links-itemsvg:focus {
+.social-links-itemsvg:hover,
+.social-links-itemsvg:focus {
   background-color: var(--main-color);
-  fill: var(--white-color);
+  fill: #ffffff;
 }
 
-.social__icon {
+.social-icon {
   width: 20px;
   height: 20px;
 }
-
 /*--END-OUR-TEAM--*/
 
 /*--CUSTOMERS--*/
@@ -734,7 +734,7 @@ input, textarea {
 }
 
 .modal__btn-portfolio:hover,
-.modal__b-portfolio:focus {
+.modal__btn-portfolio:focus {
   background: var(--main-color);
   /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -923,7 +923,7 @@ textarea {
   pointer-events: none;
 }
 
-.modal__h3 {
+.modalform__h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -933,19 +933,19 @@ textarea {
   margin-bottom: 12px;
 }
 
-.modal__div {
+.modalform__div {
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
   display: block;
 }
 
-.modal__div:focus-within .modal__icon {
+.modalform__div:focus-within .modal__icon {
   fill: var(--main-color);
   border-color: var(--main-color);
 }
 
-.modal__icon {
+.modalform__icon {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -955,16 +955,16 @@ textarea {
   display: block;
 }
 
-.modal__icon-phone{
+.modalform__icon-phone{
   width: 13px;
   height: 13px;
 }
-.modal__icon-mail{
+.modalform__icon-mail{
   width: 15px;
   height: 12px;
 }
 
-.modal__label {
+.modalform__label {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -975,7 +975,7 @@ textarea {
   outline: none;
 }
 
-.modal__input {
+.modalform__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -985,12 +985,12 @@ textarea {
   color: var(--family-color);
 }
 
-.modal__input:focus {
+.modalform__input:focus {
   border-color: var(--main-color);
   outline: none;
 }
 
-.modal__textarea {
+.modalform__textarea {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1001,15 +1001,18 @@ textarea {
   color: var(--family-color);
 }
 
-.modal__textarea:focus {
+.modalform__textarea:focus {
   border-color: var(--main-color);
   outline: none;
 }
 
-.modal__divTextarea {
+.modalform__divTextarea {
   margin-top: 4px;
   margin-bottom: 20px;
 }
+
+
+
 
 .modal__form {
   display: flex;

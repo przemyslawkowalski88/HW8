@@ -1,4 +1,18 @@
 /*---MODAL-WINDOWE---*/
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -15,19 +29,7 @@
   transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
-  position: absolute;
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
+
 
 .close__button {
   position: absolute;
@@ -52,12 +54,15 @@ textarea {
   color: var(--gray-color);
 }
 
-.modal__div input {
+.modalform {
+  display: flex;
+
+&__div input {
   padding-left: 42px;
 }
 
 
-.modal__h3 {
+&__h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -67,19 +72,18 @@ textarea {
   margin-bottom: 12px;
 }
 
-.modal__div {
+&__div {
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
   display: block;
+  &:focus-within  {
+    fill: var(--main-color);
+    border-color: var(--main-color);
+  }
 }
 
-.modal__div:focus-within .modal__icon {
-  fill: var(--main-color);
-  border-color: var(--main-color);
-}
-
-.modal__icon {
+&__icon {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -87,19 +91,21 @@ textarea {
   margin-left: 15px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
+  fill: var(--main-color);
+  border-color: var(--main-color);
 }
 
-.modal__icon-phone {
+&__icon-phone {
   width: 13px;
   height: 13px;
 }
 
-.modal__icon-mail {
+&__icon-mail {
   width: 15px;
   height: 12px;
 }
 
-.modal__label {
+&__label {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -110,7 +116,7 @@ textarea {
   outline: none;
 }
 
-.modal__input {
+&__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -118,14 +124,13 @@ textarea {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--family-color);
+    &:focus {
+    border-color: var(--main-color);
+    outline: none;
+  }
 }
 
-.modal__input:focus {
-  border-color: var(--main-color);
-  outline: none;
-}
-
-.modal__textarea {
+&__textarea {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -134,17 +139,22 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   color: var(--family-color);
-}
+    &:focus {
+      border-color: var(--main-color);
+      outline: none;
+    }
+  }
 
-.modal__textarea:focus {
-  border-color: var(--main-color);
-  outline: none;
-}
-
-.modal__divTextarea {
+&__divTextarea {
   margin-top: 4px;
   margin-bottom: 20px;
 }
+
+
+
+
+
+
 
 .modal__form {
   display: flex;
@@ -154,18 +164,27 @@ textarea {
 
 .modal__formPolicyText {
   cursor: pointer;
+    &::before {
+    content: "";
+     display: inline-block;
+     width: 16px;
+     height: 15px;
+    border: 1px solid var(--family-color);
+     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:checked{
+     background: var(--main-color);
+    border-radius: 2px;
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
+
+
 
 .modal__formPolicyText::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--family-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__formPolicy:checked+.modal__formPolicyText::before {
   background: var(--main-color);
   border-radius: 2px;
   border: none;
@@ -173,6 +192,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 
 .modal__policy {
   margin-bottom: 20px;
