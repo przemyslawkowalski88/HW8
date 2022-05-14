@@ -123,6 +123,14 @@ img {
   align-items: center;
 }
 
+.navigation__list-item {
+  position: relative;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 46px;
+}
+
 .navigation__list-link {
   font-weight: 500;
   font-size: 14px;
@@ -130,14 +138,6 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--family-color);
-}
-
-.navigation__list-item {
-  position: relative;
-}
-
-.navigation__list-item-item:not(:last-child) {
-  margin-right: 46px;
 }
 
 .activ__link::after {
@@ -264,6 +264,22 @@ img {
 
 /*------END-BUTTON------*/
 /*---MODAL-WINDOWE---*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(1, 19, 1, 0.5);
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: absolute;
   width: 528px;
@@ -275,22 +291,6 @@ img {
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(1, 19, 1, 0.5);
-  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close__button {
@@ -316,6 +316,12 @@ textarea {
   color: var(--gray-color);
 }
 
+.modalform {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 .modalform__div input {
   padding-left: 42px;
 }
@@ -328,6 +334,17 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+.modalform__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--gray-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modalform__div {
@@ -362,17 +379,6 @@ textarea {
 .modalform__icon-mail {
   width: 15px;
   height: 12px;
-}
-
-.modalform__label {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--gray-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
 }
 
 .modalform__input {
@@ -430,7 +436,16 @@ textarea {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__formPolicy:checked + .modal__formPolicyText::before {
+.modal__formPolicyText:checked {
+  background: var(--main-color);
+  border-radius: 2px;
+  border: none;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.modal__formPolicyText::before {
   background: var(--main-color);
   border-radius: 2px;
   border: none;
@@ -481,15 +496,14 @@ textarea {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
   font-family: var(--main-font);
   color: var(--white-color);
   background-color: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
 }
 
-/*---END-MODAL-WINDOWE---*/
 /*--HERO--*/
 .nav__adv {
   padding-top: 94px;
@@ -548,7 +562,7 @@ textarea {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--gray);
+  color: var(--gray-color);
 }
 
 /*--END-HERO--*/
@@ -557,14 +571,13 @@ textarea {
   background: var(--creamy-color);
 }
 
-.staff-list {
+.staff__list {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
- 
 }
 
-.staff-item {
+.staff__item {
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
@@ -573,18 +586,19 @@ textarea {
   background: var(--white-color);
 }
 
-.staff .secendary-header {
+.staff .secendary__header {
   margin-bottom: 50px;
   margin-top: 0;
   text-align: center;
 }
-.third-header {
+
+.third__header {
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.staff-p {
+.staff__p {
   margin: 0;
   font-weight: normal;
   font-size: 16px;
@@ -594,12 +608,12 @@ textarea {
   color: var(--gray-color);
 }
 
-.staff-list{
+.staff__list {
   margin-right: 32px;
   margin-left: 32px;
 }
 
-.social-links-itemsvg {
+.social__links-itemsvg {
   fill: var(--fill-color);
   display: flex;
   width: 44px;
@@ -609,30 +623,27 @@ textarea {
   align-items: center;
   justify-content: center;
   transition-property: background-color, fill;
-  transition-duration: 250ms; 
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- }
+}
 
-
-.social-links-itemsvg:hover,
-.social-links-itemsvg:focus {
+.social__links-itemsvg:hover, .social__links-itemsvg:focus {
   background-color: var(--main-color);
   fill: var(--white-color);
 }
 
-.social-icon {
+.social__icon {
   width: 20px;
   height: 20px;
 }
 
-/*--END-OUR-TEAM--*/
 /*--WHAT-WE-DO--*/
-.what .secondary__header {
-  margin-bottom: 50px;
-}
-
 .what__section {
   padding-bottom: 94px;
+}
+
+.what .secondary__header {
+  margin-bottom: 50px;
 }
 
 .what__list {
@@ -729,6 +740,11 @@ textarea {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio__list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -778,11 +794,6 @@ textarea {
   text-align: left;
   letter-spacing: 0.03em;
   color: var(--gray-color);
-}
-
-.portfolio__list-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .portfolio__list-item:hover .overlay {
@@ -853,8 +864,7 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__btn-portfolio:hover,
-.modal__b-portfolio:focus {
+.modal__btn-portfolio:hover, .modal__btn-portfolio:focus {
   background: var(--main-color);
   /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -977,7 +987,7 @@ textarea {
   line-height: 1, 142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  fill: var(--white-color);
+  color: var(--white-color);
 }
 
 .footer__newsletter-Label {
