@@ -1,4 +1,3 @@
-
 .advantages__link {
   display: flex;
   justify-content: center;
@@ -42,6 +41,7 @@
     text-align: center;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     flex-direction: row;
@@ -53,21 +53,18 @@
       width: 354px;
     }
 
-    &nav__adv-list {
+    &__Loremlist {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
       justify-content: center;
     }
+
     &__Loremh4 {
       padding-top: 30px;
       text-align: center;
     }
   }
-     .nav__adv-list {
-       display: flex;
-       align-items: center;
-     }
 }
 
 @media (min-width: 1200px) {
@@ -76,8 +73,9 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.43;
-    letter-spacing: 0,03em;
+    letter-spacing: 0, 03em;
     text-transform: uppercase;
+    // left: 215px;
   }
 
   .advantages__Loremp {
@@ -85,11 +83,11 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0,03em;
+    letter-spacing: 0, 03em;
     color: var(--gray-color);
   }
 
-  .nav__adv-list {
+  .advantages__Loremlist {
     display: flex;
     align-items: center;
   }
@@ -98,11 +96,13 @@
     padding-top: 94px;
     margin: 0;
   }
-  .nav__adv-item {
+
+  .advantages__Loremitem {
     top: 774px;
 
     &:not(:last-child) {
       margin-right: 30px;
+
     }
   }
 

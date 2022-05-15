@@ -12,8 +12,8 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .button {
     background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
       url("../images/background-mobile-2x.jpg");
@@ -28,7 +28,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  max-width: 365px;
+  max-width: 400px;
   max-height: 84px;
 
   margin-right: auto;
@@ -46,8 +46,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     .button {
       background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
         url("../images/background-tablet-2x.jpg");
@@ -64,9 +64,10 @@
     background-size: cover;
     height: 600px;
   }
+
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     .button {
       background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
         url("../images/background2x.jpg");
