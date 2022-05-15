@@ -1,0 +1,133 @@
+.footer {
+  background: #2f303a;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__address,
+.footer__mail {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin: 0;
+}
+
+.footer__mail,
+.footer__phoneNumber {
+  color: #fff;
+  text-align: center;
+}
+
+.footer__h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer__newsletterWindow {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+  padding-left: 16px;
+
+  &:focus {
+    border-color: var(--main-color);
+  }
+}
+
+.footer__newsletterIcon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 468px) and (max-width: 768px) {
+  .footer {
+    &__address,
+    &__mail,
+    &__item,
+    &__h4 {
+      text-align: center;
+    }
+  }
+  .newsletter {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__newsletterWindow {
+      width: 60%;
+      display: inline-block;
+    }
+  }
+  .newsletter {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__form {
+    display: flex;
+  }
+
+  .footer {
+    &__container {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    &__newsletterWindow {
+      width: 358px;
+      margin-right: 12px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    &__h4 {
+      padding-top: 12px;
+      text-align: left;
+    }
+
+    &__right {
+      margin-left: 70px;
+    }
+    &__newsletterLabel {
+      display: flex;
+    }
+  }
+  .newsletter {
+    margin-left: 94px;
+  }
+}

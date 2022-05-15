@@ -1,0 +1,48 @@
+.project {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.project__box {
+  position: relative;
+  max-width: 370px;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  &:hover .project__overlay {
+    transform: translatey(0);
+  }
+}
+
+.project__overlay-p {
+  height: 196px;
+  width: 301px;
+  margin-top: 49px;
+  margin-left: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.project__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+  background-color: $blue-shade;
+}
+
+@media (min-width: 468px) {
+  .project {
+    padding-top: 25px;
+  }
+}
+

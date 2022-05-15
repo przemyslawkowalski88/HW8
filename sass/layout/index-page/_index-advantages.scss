@@ -1,0 +1,123 @@
+
+.advantages__link {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__icon {
+  width: 100%;
+  padding: 0 0;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages__Loremh4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+}
+
+.advantages {
+  margin-top: 60px;
+}
+
+.advantages__Loremp {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+  margin: 0 0;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+@media screen and (min-width: 468px) and (max-width: 768px) {
+  .advantages__Loremh4 {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__Loremitem {
+      margin-bottom: 0px;
+      width: 354px;
+    }
+
+    &__Loremlist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    &__Loremh4 {
+      padding-top: 30px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__Loremh4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.43;
+    letter-spacing: 0,03em;
+    text-transform: uppercase;
+    // left: 215px;
+  }
+
+  .advantages__Loremp {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0,03em;
+    color: var(--gray-color);
+  }
+
+  .advantages__Loremlist {
+    display: flex;
+    align-items: center;
+  }
+
+  .advantages {
+    padding-top: 94px;
+    margin: 0;
+  }
+  .advantages__Loremitem {
+    top: 774px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      // top: 93px;
+    }
+  }
+
+  .advantages__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .advantages_link {
+    fill: #afb1b8;
+  }
+
+  .advantages__icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+}

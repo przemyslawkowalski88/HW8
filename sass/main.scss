@@ -1,20 +1,31 @@
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+
 @import "./base/common";
+@import "./base/container";
+@import "./base/section";
 
-@import "./components/compoents";
+@import "./components/logo";
+@import "./components/backdrop";
+@import "./components/backdrop-hamburger";
+@import "./components/hamburger";
+@import "./components/modal";
+@import "./components/secondary-header";
+@import "./components/social-list";
+@import "./components/third-header";
+@import "./components/index-model-btn";
+@import "./components/portfolio-model-btn";
+@import "./components/portfolio-project-list";
 
+@import "./layout/index-footer";
+@import "./layout/index-header";
 
-@import "./layout/header";
-@import "./layout/button";
-@import "./layout/modal-windowe";
-@import "./layout/hero";
-@import "./layout/our.team";
-@import "./layout/what.we.do";
-@import "./layout/costumers";
-@import "./layout/portfolio";
-@import "./layout/portfolio-buttons";
-@import "./layout/footer";
+@import "./layout/index-page/index-customer";
+@import "./layout/index-page/index-button";
+@import "./layout/index-page/index-advantages";
+@import "./layout/index-page/index-staff";
+@import "./layout/index-page/index-WhatWeDo";
 
-
-@import "./utlis/variables";
-@import "./utlis/viusally-hidden";
+@import "./layout/portfolio-page/portfolio-portfolio";
+@import "./layout/portfolio-page/portfolio-project";
 

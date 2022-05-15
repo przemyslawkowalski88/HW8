@@ -1,0 +1,20 @@
+.hamburger {
+  border: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--secondary-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__icon {
+  width: 24px;
+  height: 16px;
+}
