@@ -1,11 +1,11 @@
-.third__header {
+.third-header {
   margin-top: 30px;
   margin-bottom: 10px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: $medium;
+  font-size: $font16;
   line-height: 1.187;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter03;
   text-align: center;
 }
 
@@ -15,7 +15,7 @@
   padding-left: 24px;  
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: $font18;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: $letter06;
 }

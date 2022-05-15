@@ -1,16 +1,16 @@
 .staff__p {
   text-align: center;
-  color: #757575;
+  color: $secondary;
   margin: 10px 0;
 }
 
 .staff {
-  background-color: #f5f4fa;
+  background-color: $light-very;
   font-weight: normal;
-  font-size: 16px;
+  font-size: $font16;
   line-height: 1.187;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter03;
 }
 
 .staff__img {
@@ -19,9 +19,9 @@
 }
 
 .staff__item {
-  background: #fff;
+  background: $white;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px $black012, 0px 1px 1px $black014, 0px 2px 1px $black02;
   border-radius: 0px 0px 4px 4px;
 }
 

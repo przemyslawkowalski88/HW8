@@ -1,18 +1,58 @@
-:root {
-    --font-family: "Roboto", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
-    --main-color: #2196f3;
-    --family-color: #212121;
-    --gray-color: #757575;
-    --white-color: #FFFFFF;
-    --creamy-color: #F5F4FA;
-    --graphite-color: #2f303a;
-    --border-color: #ececec;
-    --border-color-port: #eeeeee;
-    --fill-color: #afb1b8;
-}
+//color//
+$primary: #212121; //family-color
+$white: #ffffff;
+$accent: #2196f3; //main-color
+$secondary: #757575;
+$black02:rgba(0, 0, 0, 0.2);
+$black: #000000;
+$black015: rgba(0, 0, 0, 0.15);
+$black01: rgba(0, 0, 0, 0.1);
+$white-e:#eeeeee;
+$white01:rgba(255, 255, 255, 0.1);
+$light-gray: #afb1b8;
+$dark: #2f303a;
+$light-very: #f5f4fa;
+$dark-shade:rgba(46, 47, 59, 0.4);
+$black012: rgba(0, 0, 0, 0.12);
+$black014: rgba(0, 0, 0, 0.14);
+$white06: rgba(255, 255, 255, 0.6);
+$white03:rgba(255, 255, 255, 0.3);
+$very-light-gray: #ececec;
+$dark-gray:rgba(33, 33, 33, 0.2);
+$black08: rgba(0, 0, 0, 0.08);
+$blue-shade: rgba(33, 150, 243, 0.9);
+$white1: rgba(255, 255, 255, 1);
+$black016:rgba(0, 0, 0, 0.16);
+$black04: rgba(0, 0, 0, 0.04);
 
-body {
-    font-family: var(--font-family);
-    color: var(--family-color);
-}
+//font weight//
+$light: 500;
+$medium: 700;
+$xbold: 900;
+
+//font-size//
+$font12: 12px;
+$font16: 16px;
+$font26: 26px;
+$font20: 20px;
+$font14: 14px;
+$font36: 36px;
+$font18: 18px;
+$font44: 44px;
+$font18: 18px;
+$font24: 24px;
+$font40: 40px;
+$font34: 34px;
+$font28: 28px;
+
+
+//letter-spacing//
+$letter01: 0.01em;
+$letter02: 0.02em;
+$letter03: 0.03em;
+$letter04: 0.04em;
+$letter06: 0.06em;
+
+//border-radius//
+$border4: 4px;
+$border2: 2px;

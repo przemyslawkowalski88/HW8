@@ -9,9 +9,9 @@
 .project__item {
   position: relative;
   max-width: 370px;
-  border: 1px solid #ffffff;
+  border: 1px solid $white-e;
   height: auto;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -22,8 +22,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px $black012, 0px 1px 1px $black014,
+      0px 2px 1px $black02;
     border-radius: 0px 0px 4px 4px;
     cursor: pointer;
   }
@@ -31,10 +31,10 @@
 .project__staff-p {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: $font16;
   line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--gray-color);
+  letter-spacing: $letter03;
+  color: $secondary;
   margin: 0;
   padding-top: 4px;
   padding-left: 24px;

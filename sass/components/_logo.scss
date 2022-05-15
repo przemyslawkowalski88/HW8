@@ -1,31 +1,31 @@
 .logo {
   font-family: var(--secondary-font);
-  color: #212121;
+  color: $primary;
   justify-content: center;
-  font-size: 24px;
+  font-size: $font24;
 }
 
 .logo__color {
-  color: #2196f3;
+  color: $accent;
 }
 
 .footer__logo {
   font-family: var(--secondary-font);
   margin-top: 60px;
-  color: var(--white-color);
+  color: $white;
   padding-bottom: 20px;
   display: flex;
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: $medium;
+  font-size: $font26;
   line-height: 1.192;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter03;
 }
 
 @media (min-width: 1200px) {
   .logo {
-    font-size: 26px;
+    font-size: $font26;
     line-height: 31px;
-    letter-spacing: 0.03em;
+    letter-spacing: $letter03;
     margin-right: 93px;
   }
 }

@@ -1,5 +1,5 @@
 .button {
-  background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
+  background-image: linear-gradient($dark-shade, $dark-shade),
     url("../images/background-mobile.jpg");
 
   display: flex;
@@ -15,19 +15,19 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .button {
-    background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
+    background-image: linear-gradient($dark-shade, $dark-shade),
       url("../images/background-mobile-2x.jpg");
   }
 }
 
 .button__content h1 {
-  font-weight: 900;
-  font-size: 26px;
+  font-weight: $xbold;
+  font-size: $font26;
   line-height: 1.615;
 
   text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
+  letter-spacing: $letter06;
+  color: $white;
   max-width: 365px;
   max-height: 84px;
 
@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
   .button {
-    background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
+    background-image: linear-gradient($dark-shade, $dark-shade),
       url("../images/background-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -49,7 +49,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .button {
-      background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
+      background-image: linear-gradient($dark-shade, $dark-shade),
         url("../images/background-tablet-2x.jpg");
     }
   }
@@ -57,7 +57,7 @@
 
 @media (min-width: 1200px) {
   .button {
-    background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
+    background-image: linear-gradient($dark-shade, $dark-shade),
       url("../images/background.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -68,20 +68,20 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .button {
-      background-image: linear-gradient(rgba(46, 47, 59, 0.4), rgba(46, 47, 59, 0.4)),
+      background-image: linear-gradient($dark-shade, $dark-shade),
         url("../images/background2x.jpg");
     }
   }
 
   .button__content h1 {
     font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
+    font-weight: $xbold;
+    font-size: $font44;
     line-height: 1.364;
 
     text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--white-color);
+    letter-spacing: $letter06;
+    color: $white;
     max-width: 696px;
     max-height: 120px;
     left: 452px;
@@ -91,3 +91,38 @@
     margin-left: auto;
   }
 }
+
+// .button__content h1 {
+//   font-style: normal;
+//   font-weight: $xbold;
+//   font-size: $font44;
+//   line-height: 1.364;
+
+//   text-align: center;
+//   letter-spacing: $letter06;
+//   color: $white;
+//   width: 696px;
+//   height: 120px;
+//   left: 452px;
+//   top: 280px;
+
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// .button {
+//   background-image: linear-gradient(
+//       $dark-shade,
+//       $dark-shade
+//     ),
+//     url("../images/background.jpg");
+//   height: 37.5rem;
+//   display: flex;
+//   align-items: center;
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+//   background-size: cover;
+//   position: relative;
+//   max-width: 1600px;
+//   margin: 0 auto;
+// }

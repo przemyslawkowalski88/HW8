@@ -23,10 +23,10 @@
   margin-left: 24px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: $font18;
   line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
+  letter-spacing: $letter03;
+  color: $white;
 }
 
 .project__overlay {

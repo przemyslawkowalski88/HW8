@@ -1,17 +1,17 @@
 .secondary-header {
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: $font28;
   line-height: 1.179;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter03;
   margin-bottom: 30px;
   margin-top: 0;
 }
 
 @media (min-width: 1200px) {
   .secondary-header {
-    font-size: 36px;
+    font-size: $font36;
     margin-bottom: 50px;
   }
 }
