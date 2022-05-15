@@ -26,13 +26,13 @@
   justify-content: center;
   font-style: normal;
   font-weight: bold;
-  font-size: $font14;
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: $letter03;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $white;
+  color: var(--white-color);
   width: 370px;
   height: 70px;
-  background: $dark;
+  background: #2f303a;
 }

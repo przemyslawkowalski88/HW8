@@ -1,57 +1,3 @@
-// .advantages__Loremh4 {
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: $font14;
-//   line-height: 1.43;
-//   letter-spacing: $letter03;
-//   text-transform: uppercase;
-//   left: 215px;
-//   top: 774px;
-// }
-
-// .advantages__Loremp {
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: $font14;
-//   line-height: 1.714;
-//   letter-spacing: $letter03;
-//   color: $secondary;
-// }
-
-// .advantages__Loremlist {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .advantages {
-//   padding-top: 94px;
-//   margin: 0;
-// }
-// .advantages__Loremitem{
-//   top: 774px;
-
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//     top: 93px;
-//   }
-// }
-
-// .advantages__list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   margin-bottom: 30px;
-// }
-
-// .advantages_link {
-//   fill: $light-gray;
-// }
-
-// .advantages__icon {
-//   width: 270px;
-//   height: 120px;
-//   margin-bottom: 30px;
-// }
 
 .advantages__link {
   display: flex;
@@ -62,16 +8,16 @@
   width: 100%;
   padding: 0 0;
   height: 120px;
-  background-color: $light-very;
-  border-radius: $border4;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .advantages__Loremh4 {
   font-style: normal;
-  font-weight: $medium;
-  font-size: $font14;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.43;
-  letter-spacing: $letter03;
+  letter-spacing: 0.03em;
   padding-bottom: 10px;
 }
 
@@ -81,10 +27,10 @@
 
 .advantages__Loremp {
   font-weight: normal;
-  font-size: $font14;
+  font-size: 14px;
   line-height: 1.714;
-  letter-spacing: $letter03;
-  color: $secondary;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
   margin: 0 0;
   padding-bottom: 30px;
   text-align: left;
@@ -124,9 +70,9 @@
   .advantages__Loremh4 {
     font-style: normal;
     font-weight: bold;
-    font-size: $font16;
+    font-size: 16px;
     line-height: 1.43;
-    letter-spacing: $letter03;
+    letter-spacing: 0,03em;
     text-transform: uppercase;
     // left: 215px;
   }
@@ -134,10 +80,10 @@
   .advantages__Loremp {
     font-style: normal;
     font-weight: normal;
-    font-size: $font14;
+    font-size: 14px;
     line-height: 1.714;
-    letter-spacing: $letter03;
-    color: $secondary;
+    letter-spacing: 0,03em;
+    color: var(--gray-color);
   }
 
   .advantages__Loremlist {
@@ -166,7 +112,7 @@
   }
 
   .advantages_link {
-    fill: $light-gray;
+    fill: #afb1b8;
   }
 
   .advantages__icon {

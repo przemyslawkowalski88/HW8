@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid $very-light-gray;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .address__iconEnvelope {
@@ -33,16 +33,16 @@
 
 .navigation__link {
   position: relative;
-  font-weight: $light;
-  font-size: $font14;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.143;
-  letter-spacing: $letter02;
-  color: $primary;
+  letter-spacing: 0.02em;
+  color: var(--family-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: $accent;
+    color: var(--main-color);
   }
 
   &::after {
@@ -53,14 +53,14 @@
     right: 0;
     width: 0;
     height: 4px;
-    background-color: $accent;
-    border-radius: $border2;
+    background-color: var(--main-color);
+    border-radius: 2px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover::after {
     width: 100%;
-    background-color: $accent;
+    background-color: var(--main-color);
   }
 }
 
@@ -69,13 +69,13 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: $accent;
+    color: var(--main-color);
   }
 }
 
 .navigation__link-active {
   width: 100%;
-  color: $accent;
+  color: var(--main-color);
 
   &::after {
     content: "";
@@ -84,30 +84,30 @@
     position: absolute;
     top: 45px;
     right: 0;
-    background-color: $accent;
-    border-radius: $border2;
+    background-color: var(--main-color);
+    border-radius: 2px;
   }
 }
 
 .address {
   font-style: normal;
-  color: $secondary;
-  font-weight: $light;
-  font-size: $font14;
+  color: var(--gray-color);
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.143;
-  letter-spacing: $letter02;
+  letter-spacing: 0.02em;
 }
 
 .address__mail,
 .address__phoneNumber {
-  color: $secondary;
+  color: var(--gray-color);
   display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: $accent;
-    fill: $accent;
+    color: var(--main-color);
+    fill: var(--main-color);
   }
 }
 

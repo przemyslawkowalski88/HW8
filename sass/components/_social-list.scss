@@ -9,16 +9,16 @@
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: $white;
+  background-color: var(--white-color);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill: $light-gray;
+  fill: #afb1b8;
 
   &:hover,
   &:focus {
-    fill: $white;
-    background-color: $accent;
+    fill: var(--white-color);
+    background-color: var(--main-color);
   }
 }
 
@@ -42,18 +42,18 @@
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: $white01;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill: $white;
+  fill: var(--white-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    fill: $white;
-    background-color: $accent;
+    fill: #ffffff;
+    background-color: var(--main-color);
   }
 }
 

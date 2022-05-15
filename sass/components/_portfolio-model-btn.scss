@@ -1,16 +1,16 @@
 .portfolio__btn {
-  background: $light-very;
-  border-radius: $border4;
+  background: var(--border-color);
+  border-radius: 4px;
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: $light;
-  font-size: $font16;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.625;
   margin: 0 auto;
   display: block;
 
   text-align: center;
-  letter-spacing: $letter03;
+  letter-spacing: 0.03em;
   cursor: pointer;
   border: 0;
   padding: 6px 22px;
@@ -21,10 +21,10 @@
 
   &:hover,
   &:focus {
-    background-color: $accent;
-    box-shadow: 0px 3px 1px $black01, 0px 1px 2px $black08,
-      0px 2px 2px $black012;
-    color: $white;
+    background-color: var(--main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--white-color);
   }
 }
 
