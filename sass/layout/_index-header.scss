@@ -73,7 +73,7 @@
   }
 }
 
-.activ__link {
+.navigation__link-active {
   width: 100%;
   color: var(--main-color);
 
@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: 468px) {
+@media (min-width: 320px) {
   .navigation__list {
     display: none;
   }
@@ -133,7 +133,7 @@
   .hamburger {
     display: none;
   }
-  .activ__link::after {
+  .navigation__link-active::after {
     top: 35px;
   }
   .navigation__link::after {

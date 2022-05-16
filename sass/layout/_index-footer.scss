@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-.footer__newsletter-h4 {
+.footer__h4 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
@@ -70,7 +70,7 @@
       text-align: center;
     }
   }
-  .footer__newsletter {
+  .newsletter {
     width: 100%;
     text-align: center;
   }
@@ -89,7 +89,7 @@
       display: inline-block;
     }
   }
-  .footer__newsletter {
+  .newsletter {
     width: 100%;
     text-align: center;
   }
@@ -123,14 +123,11 @@
     &__right {
       margin-left: 70px;
     }
-        &__left {
-          margin-right: 70px;
-        }
     &__newsletterLabel {
       display: flex;
     }
   }
-  .footer__newsletter {
+  .newsletter {
     margin-left: 94px;
   }
 }
