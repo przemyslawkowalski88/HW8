@@ -1,0 +1,38 @@
+@media (min-width: 320px) and (max-width: 1199px) {
+  .WhatWeDo {
+    display: none;
+  }
+}
+
+.WhatWeDo .secondary-header {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.WhatWeDo__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.WhatWeDo__item {
+  position: relative;
+}
+
+.WhatWeDo__h4 {
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  width: 370px;
+  height: 70px;
+  background: #2f303a;
+}
