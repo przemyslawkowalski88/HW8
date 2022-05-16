@@ -73,7 +73,7 @@
   }
 }
 
-.navigation__link-active {
+.activ__link {
   width: 100%;
   color: var(--main-color);
 
@@ -111,10 +111,11 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width:320px) {
   .navigation__list {
     display: none;
   }
+
   .address {
     display: none;
   }
@@ -133,7 +134,7 @@
   .hamburger {
     display: none;
   }
-  .navigation__link-active::after {
+  .activ__link::after {
     top: 35px;
   }
   .navigation__link::after {
